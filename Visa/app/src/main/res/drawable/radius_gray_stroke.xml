@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--设置button四个角的弧度-->
+    <corners android:radius="25dp"/>
+    <!--设置button里面的颜色-->
+    <stroke android:color="@color/gray_light"
+        android:width="@dimen/space_1"/>
+
+</shape>

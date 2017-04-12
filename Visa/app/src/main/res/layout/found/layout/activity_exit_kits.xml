@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_exit_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv_visa_sense"
+                style="@style/img_left_style"
+                android:background="@mipmap/kits" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/iv_visa_sense"
+                android:text="@string/visa_sense" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_marginLeft="@dimen/space_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/Thailand_Visa_process"
+                style="@style/img_left_style"
+                android:background="@mipmap/kits" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/Thailand_Visa_process"
+                android:text="@string/Thailand_Visa_process" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv_European"
+                style="@style/img_left_style"
+                android:background="@mipmap/kits" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/iv_European"
+                android:text="欧洲申根签证办理" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_marginLeft="@dimen/space_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/United_States"
+                style="@style/img_left_style"
+                android:background="@mipmap/kits" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/United_States"
+                android:text="美国签证办理" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/Canada"
+                style="@style/img_left_style"
+                android:background="@mipmap/kits" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/Canada"
+                android:text="加新澳大国签证办理"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_marginLeft="@dimen/space_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/England"
+                style="@style/img_left_style"
+                android:background="@mipmap/kits" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/England"
+                android:text="英国签证办理" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

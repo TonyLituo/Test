@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_base"/>
+
+    <TextView
+        android:textColor="@color/dark_gray"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份证正面"/>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/idcard_positive"
+            android:layout_width="180dp"
+            android:layout_height="100dp"/>
+
+        <FrameLayout
+            android:background="@drawable/layout_gray_white_bg"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_camera"
+            android:layout_width="80dp"
+            android:layout_height="50dp"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/dark_gray"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可选资料"/>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/idcard_reverse"
+            android:layout_width="180dp"
+            android:layout_height="100dp"/>
+
+        <FrameLayout
+            android:background="@drawable/layout_gray_white_bg"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/icon_camera"
+                android:layout_width="80dp"
+                android:layout_height="50dp"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/background_color"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="没有身份证"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:src="@drawable/radiobutton_nomal"
+            android:layout_marginRight="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="资料要求"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="清晰拍摄在有效期内的身份证正反面"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visa_knowledge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.dhcc.visa.ui.view.mine.VisaSenseActivity">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:padding="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_white"
+            android:drawableLeft="@mipmap/visa_how"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center_vertical"
+            android:text="@string/visa_how"
+            android:textColor="@color/text_red_color"
+            android:textSize="@dimen/text_max"/>
+        <View
+            android:layout_marginLeft="@dimen/space_5"
+            style="@style/viewh_style"
+            />
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:padding="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:background="@color/background_white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/visa_anwser"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/text_gray_style"
+                android:lineSpacingExtra="@dimen/space_5"
+                android:paddingLeft="@dimen/space_10"
+                android:text="@string/visa_tip"
+                />
+        </LinearLayout>
+</LinearLayout>
+

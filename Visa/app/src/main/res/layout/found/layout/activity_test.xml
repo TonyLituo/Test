@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        style="@style/layout_style"
+        android:layout_marginTop="@dimen/space_25">
+
+        <ImageView
+            style="@style/img_left_style"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.dhcc.visa.ui.widget.ClearEditText
+            android:id="@+id/et_login_phone"
+            style="@style/et_style"
+            android:hint="@string/login_input_phone"
+            android:inputType="number"
+            android:maxLength="11" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_style">
+
+        <ImageView
+            style="@style/img_left_style"
+            android:layout_margin="@dimen/space_5"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.dhcc.visa.ui.widget.ClearEditText
+            android:id="@+id/et_login_pwd"
+            style="@style/et_style"
+            android:hint="@string/login_input_pwd"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_blue_solid"
+        android:text="登     录" />
+
+    <LinearLayout
+        style="@style/layout_style"
+        android:background="@color/background_color">
+
+        <TextView
+            android:id="@+id/tv_free_register"
+            style="@style/text_gray_style"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tv_free_register"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            style="@style/text_gray_style"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_forget_pwd"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="测试错误信息" />
+</LinearLayout>

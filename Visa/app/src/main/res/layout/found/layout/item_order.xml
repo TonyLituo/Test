@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_num_des"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="订单编号："/>
+
+    <TextView
+        android:id="@+id/tv_order_num"
+        android:layout_toRightOf="@+id/tv_num_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="11223344"
+        android:layout_alignTop="@+id/tv_num_des"/>
+
+    <TextView
+        android:textColor="@color/blue"
+        android:id="@+id/tv_order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="美国旅游签证"
+        android:layout_alignBaseline="@+id/tv_order_num"
+        android:layout_alignBottom="@+id/tv_order_num"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"/>
+
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_order_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:id="@+id/view"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="张三"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:id="@+id/user_name"/>
+    <TextView
+        android:id="@+id/user_professional"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在职人员"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/user_name"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/user_professional"
+        android:layout_alignLeft="@+id/user_professional"
+        android:layout_alignStart="@+id/user_professional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："/>
+
+        <TextView
+            android:textColor="#fea307"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="¥1399"/>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/btn_green_solid_bg"
+            android:textColor="#36c58d"
+            android:text="取消订单"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <Button
+            android:background="@drawable/btn_pink_solid_bg"
+            android:textColor="#ff3a66"
+            android:layout_marginRight="15dp"
+            android:text="去支付"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

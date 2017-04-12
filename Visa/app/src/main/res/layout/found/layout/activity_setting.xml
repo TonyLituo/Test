@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.dhcc.visa.ui.view.user.SettingActivity">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv_visa_sense"
+                style="@style/img_left_style"
+                android:background="@mipmap/setting_about" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/iv_visa_sense"
+                android:text="@string/setting_abuot" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_marginLeft="@dimen/space_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/Thailand_Visa_process"
+                style="@style/img_left_style"
+                android:background="@mipmap/setting_serive" />
+
+            <TextView
+                android:id="@+id/tv_serive"
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/Thailand_Visa_process"
+                android:text="@string/setting_service" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv_European"
+                style="@style/img_left_style"
+                android:background="@mipmap/setting_tel" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/iv_European"
+                android:text="@string/setting_tel" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_marginLeft="@dimen/space_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/United_States"
+                style="@style/img_left_style"
+                android:background="@mipmap/setting_update" />
+
+            <TextView
+                android:id="@+id/tv_check_update"
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/United_States"
+                android:text="@string/setting_check" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_exit_login"
+            style="@style/btn_blue_solid"
+            android:text="@string/setting_quit" />
+</LinearLayout>

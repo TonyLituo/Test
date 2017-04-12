@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/background_color"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@mipmap/mine_bg"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:background="@mipmap/mine_info" />
+
+        <com.dhcc.visa.ui.widget.CircleImageView
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/login_moren_touxiang" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="138****9087"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:layout_weight="1"
+                android:text="我的积分 200"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:layout_weight="1"
+                android:text="余额 3000.00元"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/iv_visa_sense"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/mycard" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/iv_visa_sense"
+                        android:text="@string/mine_my_card" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewh_style"
+                    android:layout_marginLeft="@dimen/space_20" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/Thailand_Visa_process"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/myorder" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/Thailand_Visa_process"
+                        android:text="@string/mine_my_order" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewh_style"
+                    android:layout_marginLeft="@dimen/space_20" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/mine_collection"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/mycollect" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/mine_collection"
+                        android:text="@string/mine_my_collection" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/iv_European"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/personalinfo" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/iv_European"
+                        android:text="@string/mine_personal_info" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewh_style"
+                    android:layout_marginLeft="@dimen/space_20" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/United_States"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/address" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/United_States"
+                        android:text="@string/mine_address" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/Canada"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/recom_friend" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/Canada"
+                        android:text="@string/mine_recommend_friend" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewh_style"
+                    android:layout_marginLeft="@dimen/space_20" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/England"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/suggest" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/England"
+                        android:text="@string/mine_feedback" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewh_style"
+                    android:layout_marginLeft="@dimen/space_20" />
+
+                <RelativeLayout
+                    android:id="@+id/mine_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/recommend"
+                        style="@style/img_left_style"
+                        android:background="@mipmap/setting" />
+
+                    <TextView
+                        style="@style/text_gray_style"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_toRightOf="@+id/recommend"
+                        android:text="@string/setting_title" />
+
+                    <ImageView style="@style/img_right_arrow_style" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

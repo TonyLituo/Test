@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/background_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/space_20"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:background="@mipmap/logo"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                   android:layout_toRightOf="@+id/logo"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <TextView
+                       android:id="@+id/user_phone"
+                       android:text="158****8835"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="美签真的非常麻烦，面签技巧完全不懂，但是中智签证的客服很耐心给我讲解，最后终于成功出钱了！！开心！"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017-4-10 18:27:04"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="@dimen/space_20"
+                style="@style/viewh_style"/>
+            <RelativeLayout
+                android:paddingLeft="@dimen/space_20"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo2"
+                    android:background="@mipmap/logo"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/logo2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="158****8835"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="办理很方便，服务态度很好"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017-4-10 18:27:04"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="@dimen/space_20"
+                style="@style/viewh_style"/>
+            <RelativeLayout
+                android:paddingLeft="@dimen/space_20"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo3"
+                    android:background="@mipmap/logo"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/logo3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="158****8835"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="强烈建议要有在线客服，不然沟通方式只有客服电话，太单一"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017-4-10 18:27:04"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="@dimen/space_20"
+                style="@style/viewh_style"/>
+            <RelativeLayout
+                android:paddingLeft="@dimen/space_20"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo4"
+                    android:background="@mipmap/logo"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/logo4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="158****8835"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="办理很方便，价格优惠，态度好，以后签证还要来。"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017-4-10 18:27:04"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginLeft="@dimen/space_20"
+                style="@style/viewh_style"/>
+            <RelativeLayout
+                android:paddingLeft="@dimen/space_20"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo1"
+                    android:background="@mipmap/logo"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/logo1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="158****8835"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_5"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="强烈建议要有在线客服，不然沟通方式只有客服电话，太单一"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017-4-10 18:27:04"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+
+
+
+    
+    
+
+</LinearLayout>

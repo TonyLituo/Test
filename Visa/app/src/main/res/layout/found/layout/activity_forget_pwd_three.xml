@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_base"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="vertical">
+
+            <include layout="@layout/register_head" />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/icon_right"
+        android:layout_width="@dimen/space_80"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/space_80" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_30"
+        android:text="恭喜您，密码重置成功"
+        android:textSize="@dimen/text_size_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btn_complete"
+        style="@style/btn_blue_solid"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_50"
+        android:text="完成"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_blue_solid"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="立即登录"/>
+
+</LinearLayout>

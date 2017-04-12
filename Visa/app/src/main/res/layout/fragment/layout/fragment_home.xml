@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_180"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home_visa_top_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_35"
+        android:layout_margin="@dimen/space_20"
+        android:background="@drawable/et_search_corners_bg">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:src="@mipmap/search_white" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            style="@style/text_gray_style"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_45"
+            android:text="@string/input_country"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:background="@mipmap/btm_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recrcler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:background="@color/background_color" />
+
+            <LinearLayout
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_5">
+
+                <ImageView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_margin="@dimen/space_5"
+                    android:src="@mipmap/hot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hot"
+                    android:textColor="@color/text_yellow"
+                    android:textSize="@dimen/text_size_11" />
+
+                <HorizontalScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/space_40"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/asia"
+                            android:textColor="@color/home_color_gray"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="@dimen/space_15"
+                            android:layout_margin="@dimen/space_5"
+                            android:background="@color/gray_light" />
+
+                        <TextView
+                            android:layout_width="@dimen/space_40"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/america"
+                            android:textColor="@color/home_color_gray"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="@dimen/space_15"
+                            android:layout_margin="@dimen/space_5"
+                            android:background="@color/gray_light" />
+
+                        <TextView
+                            android:layout_width="@dimen/space_40"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/europe"
+                            android:textColor="@color/home_color_gray"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="@dimen/space_15"
+                            android:layout_margin="@dimen/space_5"
+                            android:background="@color/gray_light" />
+
+                        <TextView
+                            android:layout_width="@dimen/space_40"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/oceania"
+                            android:textColor="@color/home_color_gray"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="@dimen/space_15"
+                            android:layout_margin="@dimen/space_5"
+                            android:background="@color/gray_light" />
+
+                        <TextView
+                            android:layout_width="@dimen/space_40"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/north_america"
+                            android:textColor="@color/home_color_gray"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="@dimen/space_15"
+                            android:layout_margin="@dimen/space_5"
+                            android:background="@color/gray_light" />
+
+                        <TextView
+                            android:layout_width="@dimen/space_40"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/south_america"
+                            android:textColor="@color/home_color_gray"
+                            android:textSize="@dimen/text_size_11" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingTop="@dimen/space_5"
+                android:text="@string/hot_prdt"
+                android:textColor="@color/gray_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/europe" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/america" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:background="@color/transparent_light"
+                        android:padding="@dimen/space_3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/space_15"
+                            android:text="@string/europe_tourism"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/space_15"
+                            android:text="@string/europe_tourism_money"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="@dimen/text_size_11" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:background="@color/transparent_light">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/space_15"
+                            android:text="@string/america_tourism"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="@dimen/space_15"
+                            android:text="@string/america_tourism_money"
+                            android:textColor="@color/text_yellow"
+                            android:textSize="@dimen/text_size_11" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:background="@color/background_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/space_5"
+                    android:text="@string/asia"
+                    android:textColor="@color/home_color_gray"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_alignBottom="@+id/tv_country"
+                    android:layout_alignTop="@+id/tv_country"
+                    android:layout_toRightOf="@+id/tv_country"
+                    android:src="@mipmap/more_country" />
+
+                <TextView
+                    android:id="@+id/tv_country_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_country"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/support_country"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/text_size_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_100"
+                    android:layout_below="@+id/tv_country_num">
+
+
+                    <ImageView
+                        android:id="@+id/iv_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/thailand" />
+
+                    <ImageView
+                        android:id="@+id/iv_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/japan" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:background="@color/background_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv2_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/space_5"
+                    android:text="@string/america_tourism"
+                    android:textColor="@color/home_color_gray"
+                    android:textSize="@dimen/text_size_14" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_alignBottom="@+id/tv2_country"
+                    android:layout_alignTop="@+id/tv2_country"
+                    android:layout_toRightOf="@+id/tv2_country"
+                    android:src="@mipmap/more_country" />
+
+                <TextView
+                    android:id="@+id/tv2_country_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_country"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/support_countrys"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/text_size_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_100"
+                    android:layout_below="@+id/tv2_country_num">
+
+
+                    <ImageView
+                        android:id="@+id/iv2_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/argentina" />
+
+                    <ImageView
+                        android:id="@+id/iv2_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space_10"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/brazil" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingTop="@dimen/space_5"
+                android:text="@string/visa_process"
+                android:textColor="@color/gray_black" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_110"
+                android:background="@mipmap/home_process"
+                android:scaleType="centerCrop"></ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

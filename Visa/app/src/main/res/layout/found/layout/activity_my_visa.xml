@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv_visa_sense"
+                style="@style/img_left_style"
+                android:background="@mipmap/logo"/>
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/iv_visa_sense"
+                android:layout_width="wrap_content"
+                android:text="@string/visa_inquire"
+                android:textSize="@dimen/text_size_16"/>
+            <ImageView
+                style="@style/img_right_arrow_style"/>/>
+                android:text="签证进度查询" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_marginLeft="@dimen/space_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/Thailand_Visa_process"
+                style="@style/img_left_style"
+                android:background="@mipmap/logo"/>
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_toRightOf="@+id/Thailand_Visa_process"
+                android:text="@string/visa_pay_cost"
+                android:textSize="@dimen/text_size_16"/>
+            <ImageView
+                style="@style/img_right_arrow_style"/>
+                android:text="签证缴费" />
+
+            <ImageView style="@style/img_right_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

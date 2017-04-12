@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_base"/>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预计出行日期"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_select_data"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_blue_white_solid_bg"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="   请输入日期"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/edt_select_data"
+            android:id="@+id/iv_select_data"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/select_data"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3c3c3c"
+        android:text="申请人信息"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_blue_white_solid_bg"
+        android:textColor="#2F93DE"
+        android:text="选择申请人"/>
+    <Button
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="下一步"
+        android:textColor="@color/background_white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_blue_no_pressed"/>
+</LinearLayout>

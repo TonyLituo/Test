@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_base" />
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:src="@mipmap/home_login_bg"
+        android:scaleType="centerCrop" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_350">
+
+        <ImageView
+            style="@style/img_left_style"
+            android:src="@mipmap/phone_white" />
+
+        <com.dhcc.visa.ui.widget.ClearEditText
+            android:id="@+id/et_login_phone"
+            style="@style/et_style"
+            android:hint="@string/login_input_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/gray_white"
+            android:textColorHint="@color/gray_white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_below="@+id/ll_login_phone"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_below="@+id/v1"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10">
+
+        <ImageView
+            style="@style/img_left_style"
+            android:src="@mipmap/pwd_white" />
+
+        <com.dhcc.visa.ui.widget.ClearEditText
+            android:id="@+id/et_login_pwd"
+            style="@style/et_style"
+            android:hint="@string/login_input_pwd"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColor="@color/gray_white"
+            android:textColorHint="@color/gray_white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_below="@+id/ll_login_pwd"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_blue_solid"
+        android:layout_below="@+id/v2"
+        android:text="登     录" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20">
+
+        <TextView
+            android:id="@+id/tv_free_register"
+            style="@style/text_gray_style"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tv_free_register"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            style="@style/text_gray_style"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_forget_pwd"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

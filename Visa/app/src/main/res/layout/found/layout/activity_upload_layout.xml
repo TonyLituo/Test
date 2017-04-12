@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_base"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        layout="@layout/register_head"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/upload_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_gray_white_bg"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/icon_circle"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@drawable/icon_circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="33%"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/tv_upload_des"
+            android:layout_toRightOf="@+id/icon_circle"
+            android:background="#cccccc"/>
+
+        <TextView
+            android:id="@+id/tv_upload_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/icon_next"
+            android:text="上传资料"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/icon_next"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_blue_right_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view"
+            android:text="王正刚"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_circle"
+            android:layout_alignBottom="@+id/icon_circle"
+            android:layout_marginLeft="14dp"
+            android:text="在职人员"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_exit_login"
+        style="@style/btn_blue_solid"
+        android:text="@string/next" />
+
+</LinearLayout>

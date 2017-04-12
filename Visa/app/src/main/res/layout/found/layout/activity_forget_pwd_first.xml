@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="vertical">
+
+        <include layout="@layout/register_head" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/layout_gray_white_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/img_left_style"
+                android:src="@mipmap/phone_gray" />
+
+            <EditText
+                style="@style/et_style"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv1"
+                android:hint="@string/login_input_phone"
+                android:inputType="number"
+                android:maxLength="11" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/viewh_style"
+            android:layout_below="@+id/rl" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/iv"
+                style="@style/img_left_style"
+                android:src="@mipmap/code_gray" />
+
+            <EditText
+                style="@style/et_style"
+                android:layout_toRightOf="@+id/iv"
+                android:hint="@string/input_code"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/get_code" />
+        </RelativeLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="@dimen/space_20"
+        android:id="@+id/btn_next"
+        style="@style/btn_blue_solid"
+        android:text="下一步" />
+
+</LinearLayout>

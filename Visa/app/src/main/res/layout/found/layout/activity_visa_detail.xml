@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/background_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/title_bar"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@color/blue"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10"
+                    android:gravity="center_horizontal"
+                    android:text="美国商务签证"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+
+               <RelativeLayout
+                   android:layout_marginTop="@dimen/space_10"
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:id="@+id/price"
+                       android:layout_centerVertical="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center_horizontal"
+                       android:text="￥1299"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/text_size_20" />
+                   <TextView
+                       android:id="@+id/visa_detail"
+                       android:layout_toRightOf="@+id/price"
+                       android:layout_centerVertical="true"
+                       android:layout_marginTop="@dimen/space_10"
+                       android:layout_marginLeft="@dimen/space_20"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center_horizontal"
+                       android:text="明细"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/text_size_14" />
+               </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/handle_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:gravity="center_horizontal"
+                    android:text="办理时长  11-13个工作日"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <View style="@style/viewh_style"
+                      android:background="@color/view"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="2年"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="有效期限"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/space_20"
+                        android:background="@color/view" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="180天"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="最长停留"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/space_20"
+                        android:background="@color/view" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="多次"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="入境次数"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_25"
+                android:paddingTop="@dimen/space_15"
+                android:paddingBottom="@dimen/space_15"
+                android:paddingRight="@dimen/space_10">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/sign_rate"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出签率"
+                        android:textSize="@dimen/text_size_12"
+                        android:textColor="@color/text_color_gray_light"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/sign_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:textSize="@dimen/text_size_18"
+                        android:textColor="@color/orange"
+                        android:text="99%"/>
+                    <RelativeLayout
+                        android:id="@+id/rl_evaluation"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/evaluation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="评价"
+                            android:textSize="@dimen/text_size_12"
+                            android:textColor="@color/text_color_gray_light"/>
+                        <LinearLayout
+                            android:id="@+id/rate_star"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/evaluation"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(12)"
+                                android:textSize="@dimen/text_size_12"
+                                android:textColor="@color/text_color_gray_light"/>
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_toRightOf="@+id/rate_star"
+                            android:layout_width="@dimen/space_20"
+                            android:layout_height="@dimen/space_20"
+                            android:background="@mipmap/right_arrow"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_marginTop="@dimen/space_10"
+                  style="@style/viewh_style"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:background="@mipmap/pic1"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:background="@mipmap/pic2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:background="@mipmap/pic3"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:background="@mipmap/pic4"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray_light"
+                        android:textSize="@dimen/text_size_12"
+                        android:text="基本信息"/>
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_gray_light"
+                        android:textSize="@dimen/text_size_12"
+                        android:layout_height="wrap_content"
+                        android:text="所需资料"/>
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray_light"
+                        android:textSize="@dimen/text_size_12"
+                        android:text="预定须知"/>
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray_light"
+                        android:textSize="@dimen/text_size_12"
+                        android:text="签证流程"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:layout_height="@dimen/space_1"/>
+                    <View
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/space_1"/>
+                    <View
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/space_1"/>
+                    <View
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/space_1"/>
+                </LinearLayout>
+              <TextView
+                  android:layout_marginTop="@dimen/space_15"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/space_15"
+                  android:text="受理范围"
+                  android:textColor="@color/text_color_gray_light"
+                  android:textSize="@dimen/text_size_12"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="*适用于护照签发地为北京，天津，河北，山西，内蒙古，辽宁，吉林，黑龙江，河南，湖北，西藏，青海的申请"
+                    android:textSize="@dimen/text_size_10"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="服务范围"
+                    android:textColor="@color/text_color_gray_light"
+                    android:textSize="@dimen/text_size_12"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="*签证咨询+资料审核+照片处理+在线申请服务+签证费代缴"
+                    android:textSize="@dimen/text_size_10"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所需材料"/>
+
+                <LinearLayout
+                    android:padding="@dimen/space_1"
+                    android:background="@color/view"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*为必须提供的材料"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="o为根据个人情况提供的材料"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_45"
+                        android:layout_height="@dimen/space_45"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/pic5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="在职人员"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_45"
+                        android:layout_height="@dimen/space_45"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/pic6"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="自由职业"
+                        android:textColor="@color/text_color_gray_light"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_45"
+                        android:layout_height="@dimen/space_45"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/pic7"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="退休人员"
+                        android:textColor="@color/text_color_gray_light"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space_45"
+                            android:layout_height="@dimen/space_45"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/pic8"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="在校学生"
+                            android:textColor="@color/text_color_gray_light"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space_45"
+                            android:layout_height="@dimen/space_45"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/pic9"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="学龄前二童"
+                            android:textColor="@color/text_color_gray_light"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                    </LinearLayout>
+                <View
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_marginBottom="@dimen/space_5"
+                    style="@style/viewh_style"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="@dimen/space_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="APP拍摄资料"
+                            android:textColor="@color/text_color_black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_16"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 照片"
+                            android:textSize="@dimen/text_size_14"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 护照首页"
+                            android:textSize="@dimen/text_size_14"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="邮寄资料"
+                            android:textColor="@color/text_color_black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_16"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 护照（原件）"
+                            android:textSize="@dimen/text_size_14"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 婚姻状况"
+                            android:textSize="@dimen/text_size_14"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 身份证"
+                            android:textSize="@dimen/text_size_14"/>
+                        <TextView
+                            android:layout_marginBottom="@dimen/space_10"
+                            android:layout_marginTop="@dimen/space_20"
+                            android:background="@drawable/btn_blue_white_solid_bg"
+                            android:paddingLeft="@dimen/space_50"
+                            android:paddingRight="@dimen/space_50"
+                            android:paddingBottom="@dimen/space_10"
+                            android:paddingTop="@dimen/space_10"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="查看详情"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_size_14"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:padding="@dimen/space_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预订须知"
+                    android:textSize="@dimen/text_size_16"/>
+                <View
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_10"
+                    style="@style/viewh_style"
+                 />
+                <TextView
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/space_3"
+                    android:text="A、签证属于特殊商品，我司会按使领馆的要求为客人准备最合适的送签材料，确保您的材料有最高出签可能，但所申请的签证是否成功，取决于使领馆对资料的审核，若发生拒签请申请人自然接受结果，并放弃追究本公司任何责任的权利"
+                    android:textSize="@dimen/text_size_14"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/space_3"
+                    android:text="B、我司在收取申请人资料后，经二次审核发现不符合签证申请资格的，保留做出不予受理申请人签证申请决定的权利"
+                    android:textSize="@dimen/text_size_14"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/space_3"
+                    android:text="C、申请人需保证提供材料的真实性，有效性，如因隐瞒"
+                    android:textSize="@dimen/text_size_14"/>
+                <TextView
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:background="@drawable/btn_blue_white_solid_bg"
+                    android:paddingLeft="@dimen/space_50"
+                    android:paddingRight="@dimen/space_50"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看详情"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_14"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:padding="@dimen/space_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="签证流程"
+                    android:textSize="@dimen/text_size_16"/>
+                <View
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_10"
+                    style="@style/viewh_style"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/process"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="@dimen/space_25"
+                            android:layout_height="@dimen/space_25"
+                            android:background="@drawable/point_shape"
+                            android:text="1"
+                            android:textColor="@color/blue"/>
+                        <View
+                            android:background="@color/blue"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_45"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="@dimen/space_25"
+                            android:layout_height="@dimen/space_25"
+                            android:background="@drawable/point_shape"
+                            android:text="2"
+                            android:textColor="@color/blue"/>
+                        <View
+                            android:background="@color/blue"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_45"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="@dimen/space_25"
+                            android:layout_height="@dimen/space_25"
+                            android:background="@drawable/point_shape"
+                            android:text="3"
+                            android:textColor="@color/blue"/>
+                        <View
+                            android:background="@color/blue"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_45"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="@dimen/space_25"
+                            android:layout_height="@dimen/space_25"
+                            android:background="@drawable/point_shape"
+                            android:text="4"
+                            android:textColor="@color/blue"/>
+                        <View
+                            android:background="@color/blue"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_45"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="@dimen/space_25"
+                            android:layout_height="@dimen/space_25"
+                            android:background="@drawable/point_shape"
+                            android:text="5"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/process"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_16"
+                            android:text="预定及付款"/>
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:textSize="@dimen/text_size_13"
+                        android:text="结合自身的实际情况选择再支付方式进行支付"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="@dimen/space_25"
+                            android:text="提供纸质材料"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textSize="@dimen/text_size_13"
+                            android:text="准备好资料上门或快递"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="@dimen/space_25"
+                            android:text="审核材料"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textSize="@dimen/text_size_13"
+                            android:text="审核专员预审资料，审核通过后第一时间帮您办理"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="@dimen/space_25"
+                            android:text="递交材料"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:text="出签后核对签证信息，把电子签证发至您的邮箱"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_16"
+                            android:layout_marginTop="@dimen/space_25"
+                            android:text="领取证件"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:textSize="@dimen/text_size_13"
+                            android:text="出签后核对签证信息，把电子签证发至您的邮箱"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:padding="@dimen/space_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="签证样例"
+                    android:textSize="@dimen/text_size_16"/>
+                <View
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_10"
+                    style="@style/viewh_style"
+                    />
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@mipmap/visa_sample"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:paddingRight="@dimen/space_10"
+        android:padding="@dimen/space_5"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_50"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space_35"
+                    android:layout_height="@dimen/space_35"
+                    android:background="@mipmap/collection"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/space_50"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space_35"
+                    android:layout_height="@dimen/space_35"
+                    android:background="@mipmap/share"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/space_50"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space_35"
+                    android:layout_height="@dimen/space_35"
+                    android:background="@mipmap/ask"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="咨询"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_toRightOf="@+id/linearLayout"
+            style="@style/btn_blue_solid"
+            android:layout_width="wrap_content"
+            android:text="立即预定"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhcc.visa">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.VisaApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/portrait"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ui.view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.view.home.VisaServiceActivity" />
+        <activity android:name=".ui.view.TestActivity" />
+        <activity android:name=".ui.view.user.SettingActivity" />
+        <activity android:name=".ui.view.user.forgetpwd.ForgetPwdActivity" />
+        <activity android:name=".ui.view.user.forgetpwd.ForgetPwdSecondActivity" />
+        <activity android:name=".ui.view.user.forgetpwd.ForgetPwdThreeActivity" />
+        <activity android:name=".ui.view.user.login.LoginActivity" />
+        <activity android:name=".ui.view.user.register.FirstRegisterActivity" />
+        <activity android:name=".ui.view.home.VisaDetailActivity" />
+        <activity android:name=".ui.view.home.ExitKitsActivity" />
+        <activity android:name=".ui.view.home.VisaDetailEvaluationActivity" />
+        <activity android:name=".ui.view.home.SelectApplicantActivity" />
+        <activity android:name=".ui.view.home.DataUploadActivity" />
+        <activity android:name=".ui.MyVisaActivity" />
+        <activity android:name=".ui.MyOrderActivity" />
+        <activity android:name=".ui.view.mine.VisaSenseActivity" />
+        <activity android:name=".ui.view.mine.VisaScheduleActivity" />
+        <activity android:name=".ui.view.mine.VisaReserveActivity" />
+        <activity android:name=".ui.view.home.ApplicantInfoActivity" />
+        <activity android:name=".ui.view.home.IDCardActivity" />
+        <activity android:name=".ui.view.home.UploadDataActivity" />
+        <activity android:name=".ui.view.prdtlist.PrdtListActivity" />
+        <activity android:name=".ui.view.home.CountryClassActivity" />
+        <activity android:name=".ui.view.home.SearchActivity" />
+        <activity android:name=".ui.view.user.register.SecondRegisterActivity" />
+        <activity android:name=".ui.view.user.register.ThirdRegisterActivity" />
+        <activity android:name=".ui.view.mine.QuestionActivity" />
+    </application>
+
+</manifest>

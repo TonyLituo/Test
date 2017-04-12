@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="@dimen/space_50"
+            android:background="@mipmap/duihao"
+            android:layout_width="@dimen/space_100"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/space_100" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/home_color_gray"
+                android:text="刘青云"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/home_color_gray"
+                android:text="15986624532"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/home_color_gray"
+            android:text="恭喜您，注册成功！"
+            />
+
+        <Button
+            android:id="@+id/btn_register_finish"
+            style="@style/btn_blue_solid"
+            android:text="完成"  />
+        <Button
+            android:id="@+id/btn_register_login"
+            style="@style/btn_blue_solid"
+            android:layout_marginTop="@dimen/space_1"
+            android:text="立即登录"  />
+    </LinearLayout>
+
+
+</LinearLayout>

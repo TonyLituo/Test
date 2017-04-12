@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visa_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_dark"
+    android:orientation="vertical"
+    tools:context="com.dhcc.visa.ui.view.mine.VisaScheduleActivity">
+
+    <include
+        layout="@layout/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white">
+
+        <TextView
+            android:layout_width="@dimen/space_100"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_20"
+            android:text="@string/inquire_type"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_max"
+            />
+
+        <EditText
+            android:id="@+id/edt_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_input_passport"
+            android:paddingLeft="@dimen/space_20"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white">
+
+        <TextView
+            android:layout_width="@dimen/space_100"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_20"
+            android:text="@string/passport_num"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_max"
+            />
+
+        <EditText
+            android:id="@+id/edt_passport_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_input_passport"
+            android:paddingLeft="@dimen/space_20"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_check"
+        style="@style/btn_blue_solid"
+        android:background="@drawable/btn_blue_solid_bg"
+        android:padding="@dimen/space_3"
+        android:text="@string/inquire"
+        android:textSize="@dimen/text_size_16"
+        />
+</LinearLayout>

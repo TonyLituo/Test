@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">中智签证</string>
+
+    <string name="home">签证</string>
+    <string name="found">发现</string>
+    <string name="problem">订单</string>
+    <string name="my_visa">我的</string>
+
+    <string name="dhcc_progress_dialog_image_loading">加载中......</string>
+    <!-- Alert弹出框 -->
+    <string name="dialog_default_title">这是一条消息！</string>
+    <string name="dialog_ok">确 定</string>
+    <string name="dialog_cancel">取 消</string>
+    <string name="LOADING">加载...</string>
+    <string name="default_progressbar">Default Progressbar:</string>
+    <string name="default_dialog_info">您的一卡通未关联任何一卡通卡片，请关联卡片或使用一卡通登录购买产品</string>
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="login_input_phone">请输入您的手机号</string>
+    <string name="login_input_pwd">请输入登录密码</string>
+    <string name="tv_free_register">免费注册</string>
+    <string name="tv_forget_pwd">忘记密码?</string>
+    <string name="register">用户注册</string>
+    <string name="forget_pwd">忘记密码</string>
+   <!--首页签证-->
+    <string name="input_country">搜索国家/地区</string>
+    <string name="tv_visa_policy">签证政策</string>
+    <string name="tv_consulate_info">领馆信息</string>
+    <string name="tv_visa_prediction">出签预测</string>
+    <string name="tv_out_of_the_kit">出境锦囊</string>
+    <string name="tv_hot">热门：</string>
+    <string name="asia">亚洲</string>
+    <string name="america">美洲</string>
+    <string name="europe">欧洲</string>
+    <string name="oceania">大洋洲</string>
+    <string name="north_america">北美洲</string>
+    <string name="south_america">南美洲</string>
+    <string name="hot_prdt">热门产品</string>
+    <string name="europe_tourism">欧洲游</string>
+    <string name="europe_tourism_money">￥10000</string>
+    <string name="america_tourism">美洲游</string>
+    <string name="america_tourism_money">￥8000</string>
+    <string name="support_country">已支持20个国家</string>
+    <string name="support_country_native">已支持20个国家及地区</string>
+    <string name="support_countrys">已支持30个国家</string>
+    <string name="no_more_support">没有更多了呀，下一站去哪里联系我们！</string>
+    <string name="tv_thailand">泰国</string>
+    <string name="tv_japan">日本</string>
+    <string name="thailand">Thailand</string>
+    <string name="japan">Japan</string>
+    <string name="tv_argentina">阿根廷</string>
+    <string name="tv_brazil">巴西</string>
+    <string name="argentina">Argentina</string>
+    <string name="brazil">Brazil</string>
+    <string name="visa_process">签证流程</string>
+    <!--重置密码-->
+    <string name="input_code">请输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="reset_pwd_first">请输入新密码</string>
+    <string name="reset_pwd_second">请再次输入新密码</string>
+
+
+    <!--签证服务-->
+    <string name="query_hint">请输入您想去的国家或地区</string>
+
+    <string name="visa_sense">签证办理常识</string>
+    <string name="Thailand_Visa_process">泰国签证办理</string>
+
+    <string name="visa_how">签证怎么办理？</string>
+    <string name="visa_tip">出国必须使用签证，办理签证之前，首先要在户口所在地公安局办理护照，
+        办理好后出国就可以拿护照找签证办理机构办理签证了。</string>
+
+    <string name="visa_reserve">签证预定</string>
+    <string name="trip_date">出行日期</string>
+    <string name="hint_trip_date">请输入预计出行日期</string>
+    <string name="proposer_info">申请人信息</string>
+    <string name="proposer_name">显示选择中文姓名</string>
+    <string name="proposer_id">显示选择游客身份</string>
+    <string name="proposer_add">新增加申请人</string>
+
+    <string name="visa_inquire">签证进度查询</string>
+    <string name="visa_pay_cost">签证缴费</string>
+    <string name="inquire_type">查询类型</string>
+    <string name="hint_passport_num">护照号</string>
+    <string name="passport_num">护照号</string>
+    <string name="hint_input_passport">请输入护照号</string>
+    <string name="inquire">查询</string>
+    <string name="complete">已完成</string>
+    <string name="upload_info">待上传资料</string>
+    <string name="evaluate">评价</string>
+    <string name="user_evaluate">用户评价</string>
+    <string name="upload">上传资料</string>
+    <string name="cancel_order">取消订单</string>
+
+    <!-- 签证详情-->
+
+
+
+<!--问题锦囊-->
+    <string name="case_analysis">案例分析</string>
+    <string name="common_sense">常识普及</string>
+    <string name="visa_materials">签证材料</string>
+
+    <!--设置-->
+    <string name="setting_title">设置</string>
+    <string name="setting_abuot">关于中智</string>
+    <string name="setting_service">服务说明</string>
+    <string name="setting_tel">客服电话</string>
+    <string name="setting_check">检查更新</string>
+    <string name="setting_quit">退出登录</string>
+
+    <!--我的-->
+    <string name="mine_my_card">我的银行卡</string>
+    <string name="mine_my_order">我的订单</string>
+    <string name="mine_my_collection">我的收藏</string>
+    <string name="mine_personal_info">个人信息</string>
+    <string name="mine_address">收货地址</string>
+    <string name="mine_recommend_friend">推荐给好友</string>
+    <string name="mine_feedback">意见反馈</string>
+
+    <!--订单支付-->
+    <string name="determine_the_payment">确定支付</string>
+    <string name="order_number">订单编号</string>
+    <string name="order_code">1122466</string>
+    <string name="american_tourist_visa">美国旅游签证</string>
+    <string name="user_name">张三</string>
+    <string name="serving_officers">在职人员</string>
+    <string name="sum">合计</string>
+    <string name="sum_money">￥1399</string>
+    <string name="pay_of_ways">付款方式： </string>
+    <string name="debit_card">借记卡</string>
+    <string name="pay_of_account">付款账号</string>
+    <string name="account_alias">账户别名：</string>
+    <string name="tv_account_alias_name">张三</string>
+    <string name="pay_money">付款金额：</string>
+
+    <string name="next">下一步</string>
+</resources>

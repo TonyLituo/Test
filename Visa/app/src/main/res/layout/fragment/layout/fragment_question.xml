@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingTop="@dimen/space_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/dot1" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:text="中国驻英国使领馆将为英国公民颁发2年多次签证"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                style="@style/img_right_arrow_style"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/viewh_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/dot1" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:text="香港驾照在手 处境自由自在"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                style="@style/img_right_arrow_style"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/viewh_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/dot1" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:text="中国驻英国使领馆将为英国公民颁发2年多次签证"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                style="@style/img_right_arrow_style"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/viewh_style" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/dot1" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:layout_toRightOf="@+id/Thailand_Visa_process"
+                android:text="香港驾照在手 处境自由自在"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                style="@style/img_right_arrow_style"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

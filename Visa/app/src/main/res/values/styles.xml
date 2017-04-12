@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--左边标题返回按钮公共样式 -->
+    <style name="left_img_style">
+        <item name="android:layout_width">@dimen/space_23</item>
+        <item name="android:layout_height">@dimen/space_23</item>
+        <item name="android:src">@drawable/btn_back</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">@dimen/space_18</item>
+    </style>
+
+    <!-- 标题TextView公共样式 -->
+    <style name="text_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 按钮样式-->
+    <style name="AppTheme.Button.Visa" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dp_10</item>
+    </style>
+
+    <style name="DhccpressDialog" parent="@style/SF_dialogCustom">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SF_dialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!-- Alert 弹出框样式 -->
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <!--蓝色带圆角3dp按钮   登录、确定、dialog弹框 等 可共用（蓝色边框白色填充背景为 @drawable/btn_blue_white_solid_bg）-->
+    <style name="btn_blue_solid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_40</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:background">@drawable/btn_blue_solid_bg</item>
+        <item name="android:padding">@dimen/space_3</item>
+        <item name="android:layout_marginLeft">@dimen/space_20</item>
+        <item name="android:layout_marginRight">@dimen/space_20</item>
+        <item name="android:layout_marginTop">@dimen/space_20</item>
+        <item name="android:layout_marginBottom">@dimen/space_10</item>
+    </style>
+
+    <!--水平布局 带ImageView 和 EditText -->
+    <style name="layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/layout_gray_white_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/space_20</item>
+        <item name="android:layout_marginRight">@dimen/space_20</item>
+        <item name="android:layout_marginBottom">@dimen/space_10</item>
+        <item name="android:padding">@dimen/space_5</item>
+    </style>
+    <!--左边的ImageView   左边距10dp 大小25dp  用于编辑框左边按钮和我的界面fragment_mine  类似布局 -->
+    <style name="img_left_style">
+        <item name="android:layout_width">@dimen/space_25</item>
+        <item name="android:layout_height">@dimen/space_25</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/space_10</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--EditText -->
+    <style name="et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/space_10</item>
+        <item name="android:paddingBottom">@dimen/space_10</item>
+        <item name="android:paddingLeft">@dimen/space_15</item>
+        <item name="android:paddingRight">@dimen/space_5</item>
+    </style>
+
+    <!--右边的灰色箭头  25dp-->
+    <style name="img_right_arrow_style">
+        <item name="android:src">@mipmap/right_arrow</item>
+        <item name="android:layout_width">@dimen/space_25</item>
+        <item name="android:layout_height">@dimen/space_25</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--普通TextView公共样式 16sp  -->
+    <style name="text_gray_style" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="viewh_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_1</item>
+        <item name="android:background">@color/gray_light</item>
+    </style>
+
+    <style name="footer_bar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="main_footer_bar_radio" parent="footer_bar">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textColor">@drawable/footer_text_color</item>
+    </style>
+
+
+</resources>
